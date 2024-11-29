@@ -1,0 +1,52 @@
+/* Title Label Styling */
+.title-label {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+}
+
+/* Buttons Styling */
+.button-fetch {
+    -fx-font-size: 14px;
+    -fx-padding: 10 20;
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.button-fetch:hover {
+    -fx-background-color: #45a049;
+}
+
+.button-clear {
+    -fx-background-color: #f39c12;
+    -fx-text-fill: white;
+}
+
+.button-clear:hover {
+    -fx-background-color: #e67e22;
+}
+
+.button-exit {
+    -fx-background-color: #e74c3c;
+    -fx-text-fill: white;
+}
+
+.button-exit:hover {
+    -fx-background-color: #c0392b;
+}
+
+/* Table Styling */
+.table-view {
+    -fx-border-color: #ddd;
+    -fx-border-radius: 5;
+    -fx-background-color: #fff;
+}
+
+.table-view .column-header {
+    -fx-background-color: #4caf50;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: center;
+}

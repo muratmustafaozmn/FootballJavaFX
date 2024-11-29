@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/21" fx:controller="org.example.football.MainController">
+    <children>
+        <!-- Title -->
+        <Label layoutX="20.0" layoutY="10.0" text="Football Matches Viewer" styleClass="title-label" />
+
+        <!-- Fetch Button -->
+        <Button layoutX="20.0" layoutY="50.0" text="Fetch Matches" onAction="#fetchMatches" styleClass="button-fetch" />
+
+        <!-- TableView -->
+        <TableView fx:id="matchesTable" layoutX="20.0" layoutY="100.0" prefWidth="760.0" prefHeight="400.0">
+            <columns>
+                <TableColumn text="Home Team" fx:id="homeTeamColumn" prefWidth="250.0" />
+                <TableColumn text="Away Team" fx:id="awayTeamColumn" prefWidth="250.0" />
+                <TableColumn text="Match Date" fx:id="dateColumn" prefWidth="250.0" />
+            </columns>
+        </TableView>
+
+        <!-- Action Buttons -->
+        <HBox layoutX="20.0" layoutY="520.0" spacing="20.0">
+            <Button text="Clear Table" onAction="#clearFields" styleClass="button-clear" />
+            <Button text="Exit" onAction="#exitApplication" styleClass="button-exit" />
+        </HBox>
+    </children>
+</AnchorPane>
